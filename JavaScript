@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const parts = document.querySelectorAll('.part');
+
+    parts.forEach(part => {
+        part.addEventListener('click', () => {
+            const partName = part.getAttribute('data-part');
+            alert(`You clicked on the ${partName}! More details coming soon.`);
+            // You can enhance this by loading more information dynamically
+        });
+    });
+});
